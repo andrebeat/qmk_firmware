@@ -1,20 +1,20 @@
+/*
+ * André Silva's Ergodox Infinity keyboard layout.
+ *
+ * Inspired by The Ordinary Layout for the Ergodox EZ keyboard.
+ * https://github.com/qmk/qmk_firmware/tree/7f7f763598b7be7b2081a73be2124f40349d8032/layouts/community/ergodox/ordinary
+ *
+ */
+
 #include QMK_KEYBOARD_H
 
 #include "layers.h"
 #include "visualizer/lcd_backlight.h"
 
-static uint32_t idle_timer;
-static bool is_idle;
-
 #define LCD_BACKLIGHT_IDLE_TIMEOUT 300
 
-/*
- * André Silva's Ergodox Infinity keyboard layout.
- *
- * Based on The Ordinary Layout for the Ergodox EZ keyboard, v5
- * https://github.com/qmk/qmk_firmware/tree/7f7f763598b7be7b2081a73be2124f40349d8032/layouts/community/ergodox/ordinary
- *
- */
+static uint32_t idle_timer;
+static bool is_idle;
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
